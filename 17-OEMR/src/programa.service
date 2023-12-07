@@ -1,0 +1,12 @@
+
+[Unit]
+ Description=programa
+
+[Service]
+ ExecStartPre=/bin/sleep 50
+ ExecStart=/usr/bin/python3 /home/run.py
+ Restart=always
+ User=axel
+
+[Install]
+ WantedBy=multi-user.target
